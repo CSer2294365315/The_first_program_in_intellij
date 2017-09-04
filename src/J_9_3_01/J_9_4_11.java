@@ -44,3 +44,22 @@ class RadioButton extends JFrame
         buttonPanel.add(button);
     }
 }
+/*
+javax.swing.JRadioButton
+    JRadioButton(String label, Icon icon);
+    构造一个单选钮，初始没有被选择
+    JRadioButton（String label，boolean state）
+    用给定的标签和初始状态构造一个单选钮
+javax.swing.ButtonGroup
+    void add(AbstractButton b)
+    将按钮添加到组中
+    ButtonModel getSelection()
+    返回被选择按钮的按钮模型
+javax.swing.ButtonModel
+    String getActionCommand()
+    返回按钮模型的命令
+javax.swing.AbstarctButton()
+    void setActionCommand(String s)
+    设置按钮以及其模型的动作命令
+
+ */
