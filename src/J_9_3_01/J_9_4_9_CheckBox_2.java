@@ -2,7 +2,7 @@ package J_9_3_01;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-
+ //
 public class J_9_4_9_CheckBox_2
 {
     public static void main(String[] args)
