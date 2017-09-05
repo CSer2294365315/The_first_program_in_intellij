@@ -40,7 +40,7 @@ class sliderFrame extends JFrame
         addSlider
 
 
-
+a
 
 
 
