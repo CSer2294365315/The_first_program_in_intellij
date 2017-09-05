@@ -2,6 +2,7 @@ package J_9_3_01;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
+import javax.swing.event.*;
 import java.util.*;
 
 public class J_9_5_5_slider
@@ -18,8 +19,10 @@ public class J_9_5_5_slider
 }
 class sliderFrame extends JFrame
 {
-    private ChangeListener listener;
+
     private JTextField textField;
+    ChangeListener listener_1;
+    JPanel sliderPanel;
     public sliderFrame()
     {
         /*
@@ -27,17 +30,17 @@ class sliderFrame extends JFrame
         lable.setFont(new Font("Serif",Font.BOLD,20));
         add(label,BorderLayout.CENTER);
         */
-
-        JPanel sliderPanel=new JPanel();
+        textField=new JTextField();
+        sliderPanel=new JPanel();
         sliderPanel.setLayout(new GridBagLayout());
 
-        listener_1=event->{
+         listener_1=event->{
             JSlider source=(JSlider) event.getSource();
-            textField.setText(""+source.getValue);
+            textField.setText(""+source.getValue());
         };
 
         JSlider slider=new JSlider();
-        addSlider(silder,"Plain");
+        addSlider(slider,"Plain");
 
         slider=new JSlider();
         slider.setPaintTicks(true);
@@ -54,12 +57,46 @@ class sliderFrame extends JFrame
 
         slider=new JSlider();
         slider.setPaintTicks(true);
-        slider.setPaintTrace(false);
+        slider.setPaintTrack(false);
         slider.setMajorTickSpacing(20);
         slider.setMinorTickSpacing(5);
         addSlider(slider,"No track");
 
+        slider=new JSlider();
+        slider.setPaintTicks(true);
+        slider.setPaintTrack(true);
+        slider.setMajorTickSpacing(20);
+        slider.setMinorTickSpacing(5);
+        slider.setInverted(true);
+        addSlider(slider,"Inverted");
 
+        slider=new JSlider();
+        slider.setPaintTicks(true);
+        slider.setPaintLabels(true);
+        slider.setMajorTickSpacing(20);
+        slider.setMinorTickSpacing(5);
+        addSlider(slider,"Labels");
+
+        slider=new JSlider();
+        slider.setPaintLabels(true);
+        slider.setPaintTicks(true);
+        slider.setMajorTickSpacing(20);
+        slider.setMinorTickSpacing(5);
+        Dictionary<Integer,Component> labelTable=new Hashtable<>();
+        labelTable.put(0,new JLabel("A"));
+        labelTable.put(20,new JLabel("B"));
+        labelTable.put(40,new JLabel("C"));
+        labelTable.put(60,new JLabel("D"));
+        labelTable.put(80,new JLabel("E"));
+        labelTable.put(100,new JLabel("F"));
+
+        slider.setLabelTable(labelTable);
+        addSlider(slider,"Custom labels");
+
+
+        add(sliderPanel,BorderLayout.CENTER);
+        add(textField,BorderLayout.SOUTH);
+        setSize(600,600);
 
 
 
@@ -75,9 +112,9 @@ class sliderFrame extends JFrame
         panel.add(s);
         panel.add(new JLabel(name));
         panel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        GridBagConstaints gbc=new GridBagConstaints();
-        gbc.gridy=sliderPanel.getComponent();
-        gbc.anchor=GridBagConstaints.WEST;
+        GridBagConstraints gbc=new GridBagConstraints();
+        gbc.gridy=sliderPanel.getComponentCount();
+        gbc.anchor=GridBagConstraints.WEST;
         sliderPanel.add(panel,gbc);
 
 
