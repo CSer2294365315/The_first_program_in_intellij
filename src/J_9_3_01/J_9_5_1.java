@@ -9,19 +9,18 @@ public class J_9_5_1
     {
         EventQueue.invokeLater(()->
         {
-            JFrame frame=new ComboBoxFrame();
+            JFrame frame=new ComboBoxFrame2();
             frame.setTitle("这是一个组合框测试...");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.
-            frame.Visible(true);
+            frame.setVisible(true);
         });
     }
 }
 
-class ComboBoxFrame extends JFrame
+class ComboBoxFrame2 extends JFrame
 {
     private JComboBox<String> faceCombo;
-    public ComboBoxFrame()
+    public ComboBoxFrame2()
     {
         JLabel label=new JLabel("这是一个测试用例...");
         label.setFont(new Font("Serif",Font.BOLD,20));
@@ -33,11 +32,11 @@ class ComboBoxFrame extends JFrame
         faceCombo.addItem("Dialog");
 
         faceCombo.addActionListener(event->{
-            label.setFont(new Font(faceCombo.getItemAt(faceCombo.getSelectedIndex())),Font.BOLD,20);
+            label.setFont(new Font(faceCombo.getItemAt(faceCombo.getSelectedIndex()),Font.BOLD,20));
         });
 
         JPanel panel=new JPanel();
-        panel.add(faceCombo,Border.SOUTH);
+        panel.add(faceCombo,BorderLayout.SOUTH);
 
         pack();
 
