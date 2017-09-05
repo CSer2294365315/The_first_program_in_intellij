@@ -263,7 +263,7 @@ java.awt.BorderLayout
     panel.add(new JButton("1"));
     panel.add(new JButton("2"));
 实际上，在组织窗口布局时一行或者一列的小网比较有用，如果想纺织一行尺寸都一样的按钮，就可以将这些按钮放置在一个面板内，这个面板只有一行的网络布局进行管理
-
+a
 
 
 
