@@ -1,13 +1,4 @@
-package J_9_3_01;
 
-public class J_9_4_2
-{
-    public static void main (String [] args)
-    {
-
-    }
-
-}
 /*
 文本输入
 Swing用户界面组件
