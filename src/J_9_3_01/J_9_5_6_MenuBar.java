@@ -1,10 +1,163 @@
 package J_9_3_01;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
 
 public class J_9_5_6_MenuBar
 {
-
-
+    public static void main(String[] args)
+    {
+        EventQueue.invokeLater(()->
+        {
+            JFrame frame=new MenuFrame();
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setTitle("这是一个菜单设置测试...");
+            frame.setVisible(true);
+        });
+    }
 }
+
+class MenuFrame extends JFrame
+{
+    private static final int DEFAULT_WIDTH=300;
+    private static final int DEFAULT_HEIGHT=200;
+    private Action saveAction;
+    private Action saveAsAction;
+    private JCheckBoxMenuItem read_onlyItem;
+    private JPopupMenu popup;
+
+    public class TestAction extends AbstractAction
+    {
+        public TestAction(String name)
+        {
+            super(name);
+        }
+
+        public void actionPerformed(ActionEvent event)
+        {
+            System.out.println(getValue(Action.NAME)+" ...selected.");
+        }
+    }
+
+
+
+    public MenuFrame()
+    {
+        setSize(DEFAULT_WIDTH,DEFAULT_HEIGHT);
+
+        JMenu fileMenu=new JMenu("File");
+        fileMenu.add(new TestAction("new ---File..."));     //test name
+
+        JMenuItem openItem=fileMenu.add(new TestAction("Open..name"));
+        openItem.setAccelerator(KeyStroke.getKeyStroke("ctrl 0"));
+
+        fileMenu.addSeparator();
+
+        saveAction=new TestAction("Save");
+        JMenuItem saveItem=fileMenu.add(saveAction);  //动作的名字就是saveItem的名字，动作一定有名字，要么是默认的，要么是指定的
+        saveItem.setAccelerator(KeyStroke.getKeyStroke("ctrl S"));
+
+        saveAsAction=new TestAction("Save As");
+        fileMenu.add(saveAsAction);
+        fileMenu.addSeparator();
+
+        fileMenu.add(new AbstractAction("Exit...1")     //因为别的都是定制的AbstractAction，这个是特殊的动作，不同于其他的动作，所以需要新增一个AbstractAction，使用匿名类
+        {
+            public void actionPerformed(ActionEvent event)
+            {
+                System.exit(0);
+            }
+
+        });
+
+         //demonstrate checkBox and radio menus
+        read_onlyItem=new JCheckBoxMenuItem("Read-only...1");
+        read_onlyItem.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent event)
+            {
+                boolean saveOK=!read_onlyItem.isSelected();   //如果为只读（readonly），则不可选
+                saveAction.setEnabled(saveOK);
+                saveAsAction.setEnabled(saveOK);
+            }
+        });
+
+        ButtonGroup group=new ButtonGroup();
+
+        JRadioButtonMenuItem insertItem=new JRadioButtonMenuItem("Insert");
+        insertItem.setSelected(true);   //设置按钮状态？就可默认的可以按这个按钮 但是没有触发按钮？？？？？？
+        JRadioButtonMenuItem overtypeItem=new JRadioButtonMenuItem("Over type");
+
+        group.add(insertItem);
+        group.add(overtypeItem);
+
+        Action cutAction=new TestAction("Cut");
+        cutAction.putValue(Action.NAME,"用cut.gif的控制台输出来代替图标");   //Action.putValue(Action.NAME,string) 用于将动作的名字存到动作中，也就是，将隐式对象与属性为Action.NAME的Object关联起来，Action.NAME仅用于说明属性，真正关联的是隐式对象与Object
+
+        Action copyAction=new TestAction("Copy");
+        copyAction.putValue(Action.NAME,"copy.gif的控制台输出来代替图标");
+
+        Action pasteAction=new TestAction("Paste");
+        pasteAction.putValue(Action.NAME,"paste.gif的控制台输出来代替图标");
+
+        JMenu editMenu=new JMenu("Edit");
+
+        editMenu.add(cutAction);
+        editMenu.add(copyAction);
+        editMenu.add(pasteAction);
+
+        JMenu optionMenu=new JMenu("Options");
+
+        optionMenu.add(read_onlyItem);   //一个复选框
+        optionMenu.addSeparator();
+        optionMenu.add(insertItem);
+        optionMenu.add(overtypeItem);
+
+        editMenu.addSeparator();
+        editMenu.add(optionMenu);
+
+
+
+        JMenu helpMenu=new JMenu("Help");
+        helpMenu.setMnemonic('H');   //看一下怎么显式在菜单中，有没有下划线
+
+        JMenuItem indexItem=new JMenuItem("Index...");
+        indexItem.addActionListener(event->{
+            System.out.println("用控制台输出Index...");
+        });
+
+        indexItem.setMnemonic('I');
+
+        helpMenu.add(indexItem);
+
+        Action aboutAction=new TestAction("About");
+        aboutAction.putValue(Action.MNEMONIC_KEY,new Integer('A'));
+
+        JMenuBar menuBar=new JMenuBar();
+        setJMenuBar(menuBar);
+
+        menuBar.add(fileMenu);
+        menuBar.add(editMenu);
+        menuBar.add(helpMenu);
+
+        popup=new JPopupMenu();
+        popup.add(cutAction);
+        popup.add(copyAction);
+        popup.add(pasteAction);
+
+        JPanel panel=new JPanel();
+        panel.setComponentPopupMenu(popup);
+        add(panel);
+     }
+}
+
+
+
+
+
+
 
 
 
@@ -119,4 +272,93 @@ public void setEnabled(boolean b)
 接口 AccessibleComponent 中的 setEnabled
 参数：
 b - 如果此参数为 ture，则启用此对象；否则将禁用它
+
+
+public abstract class AbstractAction
+
+
+      extends
+      Object
+
+
+
+
+      implements
+      Action,
+      Cloneable,
+      Serializable
+
+此类提供 JFC Action 接口的默认实现。它定义了一些标准行为，比如 Action 对象属性（icon、text 和 enabled）的 get 和 set 方法。开发人员只需为此抽象类创建子类并定义 actionPerformed 方法即可。
+构造方法摘要
+AbstractAction()
+          用默认描述字符串和默认图标定义一个 Action 对象。
+AbstractAction(String name)
+          用指定描述字符串和默认图标定义一个 Action 对象。
+AbstractAction(String name, Icon icon)
+          用指定描述字符串和指定图标定义一个 Action 对象。
+方法摘要
+ void	addPropertyChangeListener(PropertyChangeListener listener)
+          向侦听器列表添加一个 PropertyChangeListener。
+protected  Object	clone()
+          复制抽象操作。
+protected  void	firePropertyChange(String propertyName, Object oldValue, Object newValue)
+          支持报告绑定 (bound) 属性的改变。
+ Object[]	getKeys()
+          返回 Object 的数组，这些对象是一些已经为其设置此 AbstractAction 值的键，如果没有已经设置该值的键，则返回 null。
+ PropertyChangeListener[]	getPropertyChangeListeners()
+          返回使用 addPropertyChangeListener() 添加到此 AbstractAction 中的所有 PropertyChangeListener 组成的数组。
+ Object	getValue(String key)
+          获得与指定键关联的 Object。
+ boolean	isEnabled()
+          如果启用该操作，则返回 true。
+ void	putValue(String key, Object newValue)
+          设置与指定键关联的 Value。
+ void	removePropertyChangeListener(PropertyChangeListener listener)
+          从侦听器列表中移除一个 PropertyChangeListener。
+ void	setEnabled(boolean newValue)
+          启用或禁用该操作。
+
+
+          AbstractAction
+
+public AbstractAction(String name)
+用指定描述字符串和默认图标定义一个 Action 对象。
+
+
+getValue
+
+public Object getValue(String key)
+获得与指定键关联的 Object。
+指定者：
+接口 Action 中的 getValue
+参数：
+key - 包含指定 key 的字符串
+返回：
+用此键存储的绑定 Object；如果没有键，则将返回 null
+
+
+
+NAME
+
+static final String NAME
+用来存储动作的 String 名称的键，用于菜单或按钮。
+
+
+add
+
+public JMenuItem add(Action a)
+创建连接到指定 Action 对象的新菜单项，并将其追加到此菜单的末尾。
+参数：
+a - 要添加的菜单项的 Action
+
+
+
+JRadioButtonMenuItem
+
+public JRadioButtonMenuItem(String text)
+创建一个带文本的 JRadioButtonMenuItem。
+
+
+
+
  */
