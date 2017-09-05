@@ -2,6 +2,7 @@ package J_9_3_01;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import javax.swing.BorderFactory;
 
 public class J_9_5_8
 {
@@ -13,6 +14,7 @@ public class J_9_5_8
             frame.setTitle("这是一个GridBagLayout测试...");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setVisible(true);
+            System.out.println("1");
         });
     }
 }
@@ -33,6 +35,7 @@ class FontFrame extends JFrame
 
     public FontFrame()
     {
+       // setSize(600,600);
         GridBagLayout layout=new GridBagLayout();
         setLayout(layout);
 
@@ -62,15 +65,15 @@ class FontFrame extends JFrame
 
         add(faceLabel,new GBC(0,0).setAnchor(GBC.EAST));
         add(face,new GBC(1,0).setFill(GBC.HORIZONTAL).setWeight(100,0).setInsets(1));
-        add(sizeLabel,new GBC(1,0).setAnchor(GBC.EAST));
+        add(sizeLabel,new GBC(0,1).setAnchor(GBC.EAST));
         add(size,new GBC(1,1).setFill(GBC.HORIZONTAL).setWeight(100,0).setInsets(1));
-        add(bold,new GBC(0,2,2,1).setAnchor(GBC.HORIZONTAL).setWeight(100,100));
+        add(bold,new GBC(0,2,2,1).setAnchor(GBC.CENTER).setWeight(100,100));
         add(italic,new GBC(0,3,2,1).setAnchor(GBC.CENTER).setWeight(100,100));
         add(sample,new GBC(2,0,1,4).setFill(GBC.BOTH).setWeight(100,100));
         pack();
         updateSample();
 
-        setSize(600,600);
+     //   setSize(600,600);
 
     }
 
