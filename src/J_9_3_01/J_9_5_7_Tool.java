@@ -54,7 +54,7 @@ class ToolBarFrame extends JFrame
 
         add(bar,BorderLayout.NORTH);
 
-        JMenu menu=new JMenu("Color...11111111");
+        JMenu menu=new JMenu("Color..这是菜单栏");
         menu.add(yellowAction);
         menu.add(blueAction);
         menu.add(redAction);
