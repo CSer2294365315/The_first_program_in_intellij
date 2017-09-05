@@ -70,6 +70,7 @@ class FontFrame extends JFrame
         pack();
         updateSample();
 
+        setSize(600,600);
 
     }
 
