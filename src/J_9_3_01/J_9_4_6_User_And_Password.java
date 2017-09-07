@@ -1,3 +1,4 @@
+/*
 package J_9_3_01;
 import javax.swing.*;
 import java.awt.*;
@@ -46,6 +47,7 @@ class TotalFrame extends JFrame
             不可以用JScrollPane scrollPane=new JScrollPane();
                    scrollPane.add(textField);来代替
          */
+/*
         add(scrollPanel,BorderLayout.CENTER);
 
         JPanel southPanel=new JPanel();
@@ -59,3 +61,4 @@ class TotalFrame extends JFrame
 
     }
 }
+*/
