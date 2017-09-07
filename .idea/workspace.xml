@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e38cd963-a316-4232-9d84-a3038d9ef9b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_2_DataExchange_And_File.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_3_fileChooser.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/J_9_6_7数据交换.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/DataExchangeFrame$1.class" afterPath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/DataExchangeFrame$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/DataExchangeFrame$ConnectAction.class" afterPath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/DataExchangeFrame$ConnectAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/DataExchangeFrame.class" afterPath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/DataExchangeFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/PasswordChooser.class" afterPath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/PasswordChooser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/User.class" afterPath="$PROJECT_DIR$/out/production/untitled/J_9_3_01/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +34,7 @@
       <file leaf-file-name="J_9_6_6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="66">
               <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -40,29 +46,47 @@
       <file leaf-file-name="J_9_6_7数据交换.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2894#2895#0" expanded="true" />
-                <element signature="e#2939#2940#0" expanded="true" />
-                <element signature="e#2972#2973#0" expanded="true" />
-                <element signature="e#3046#3047#0" expanded="true" />
-                <element signature="e#3872#3873#0" expanded="true" />
-                <element signature="e#3904#3905#0" expanded="true" />
-                <element signature="e#3943#3944#0" expanded="true" />
-                <element signature="e#3979#3980#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="J_9_7_1_file.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="J_9_7_1_file.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="66">
+              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_7_3_fileChooser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_3_fileChooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_7_2_DataExchange_And_File.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_2_DataExchange_And_File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2925#2926#0" expanded="true" />
+                <element signature="e#3001#3002#0" expanded="true" />
+                <element signature="e#3034#3035#0" expanded="true" />
+                <element signature="e#3109#3110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,7 +94,7 @@
       <file leaf-file-name="J_9_6_3_DialogFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-381">
+            <state relative-caret-position="858">
               <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,8 +166,10 @@
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_2_Dialog.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" />
-        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java" />
+        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_7_2_DataExchange_And_File.java" />
+        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" />
+        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_7_3_fileChooser.java" />
       </list>
     </option>
   </component>
@@ -192,9 +218,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,18 +238,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="J_9_3_01" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="java-intellij—GitHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-intellij—GitHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="J_9_3_01" type="462c0819:PsiDirectoryNode" />
-              <item name="J_9_6_6.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,24 +274,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.J_9_7_1_file">
+  <component name="RunManager" selected="Application.J_9_7_2_DataExchange_And_File">
     <configuration name="J_9_4_11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_4_11" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled" />
-      <envs />
-    </configuration>
-    <configuration name="J_9_6_2_Dialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_6_2_Dialog" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -329,6 +334,20 @@
     <configuration name="J_9_7_1_file" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_7_1_file" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="untitled" />
+      <envs />
+    </configuration>
+    <configuration name="J_9_7_2_DataExchange_And_File" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_7_2_DataExchange_And_File" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -422,19 +441,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.J_9_6_2_Dialog" />
-      <item index="1" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
-      <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_6" />
-      <item index="3" class="java.lang.String" itemvalue="Application.J_9_6_7数据交换" />
-      <item index="4" class="java.lang.String" itemvalue="Application.J_9_7_1_file" />
+      <item index="0" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
+      <item index="1" class="java.lang.String" itemvalue="Application.J_9_6_6" />
+      <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_7数据交换" />
+      <item index="3" class="java.lang.String" itemvalue="Application.J_9_7_1_file" />
+      <item index="4" class="java.lang.String" itemvalue="Application.J_9_7_2_DataExchange_And_File" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.J_9_7_1_file" />
-        <item index="1" class="java.lang.String" itemvalue="Application.J_9_6_7数据交换" />
-        <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_6" />
-        <item index="3" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
-        <item index="4" class="java.lang.String" itemvalue="Application.J_9_6_2_Dialog" />
+        <item index="0" class="java.lang.String" itemvalue="Application.J_9_7_2_DataExchange_And_File" />
+        <item index="1" class="java.lang.String" itemvalue="Application.J_9_7_1_file" />
+        <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_7数据交换" />
+        <item index="3" class="java.lang.String" itemvalue="Application.J_9_6_6" />
+        <item index="4" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +491,6 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2090784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -494,6 +512,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2090784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -514,24 +533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/mouseComponent1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/CalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/untitle.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/awt/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -612,9 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="24" column="65" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,96 +725,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/xml/preferences.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_rack.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/loading.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/slide_in_up.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/login_loading.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/slide_out_down.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_grow_from_top.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_shrink_from_top.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android-app-master/src/com/weibo/net/Weibo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/xml/preferences.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_rack.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/loading.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/slide_in_up.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/login_loading.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/slide_out_down.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_grow_from_top.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_shrink_from_top.xml" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/.project" />
+    <entry file="file://$PROJECT_DIR$/android-app-master/src/com/weibo/net/Weibo.java" />
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_2_Dialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1209">
           <caret line="159" column="44" lean-forward="false" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4622#4623#0" expanded="true" />
-            <element signature="e#4665#4666#0" expanded="true" />
-            <element signature="e#5299#5300#0" expanded="true" />
-            <element signature="e#5361#5362#0" expanded="true" />
+            <element signature="e#4622#4623#0" expanded="false" />
+            <element signature="e#4665#4666#0" expanded="false" />
+            <element signature="e#5299#5300#0" expanded="false" />
+            <element signature="e#5361#5362#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,15 +753,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="121" column="48" lean-forward="false" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="66">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -849,7 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-381">
+        <state relative-caret-position="858">
           <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -859,26 +778,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2894#2895#0" expanded="true" />
-            <element signature="e#2939#2940#0" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#3046#3047#0" expanded="true" />
-            <element signature="e#3872#3873#0" expanded="true" />
-            <element signature="e#3904#3905#0" expanded="true" />
-            <element signature="e#3943#3944#0" expanded="true" />
-            <element signature="e#3979#3980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_2_DataExchange_And_File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#3001#3002#0" expanded="true" />
+            <element signature="e#3034#3035#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="66">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_3_fileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
