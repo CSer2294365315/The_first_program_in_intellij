@@ -21,13 +21,13 @@ public class J_9_6_3_DialogFrame
     }
 }
 
-class DialogFrame extends JFrame
+class DialogFrame_3 extends JFrame
 {
     private static final int DEFAULT_WIDTH=300;
     private static final int DEFAULT_HEIGHT=200;
     private AboutDialog dialog;
 
-    public DialogFrame()
+    public DialogFrame_3()
     {
         setSize(DEFAULT_WIDTH,DEFAULT_HEIGHT);
 
@@ -40,7 +40,7 @@ class DialogFrame extends JFrame
         aboutItem.addActionListener(event->
         {
             if(dialog==null)
-                dialog=new AboutDialog(DialogFrame.this);
+                dialog=new AboutDialog(DialogFrame_3.this);
             dialog.setVisible(true);
         });
         fileMenu.add(aboutItem);

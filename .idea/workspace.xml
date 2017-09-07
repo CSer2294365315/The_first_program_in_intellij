@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e38cd963-a316-4232-9d84-a3038d9ef9b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" afterPath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +25,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="J_9_6_6.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="J_9_6_6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_6_7数据交换.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2894#2895#0" expanded="true" />
+                <element signature="e#2939#2940#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
+                <element signature="e#3046#3047#0" expanded="true" />
+                <element signature="e#3872#3873#0" expanded="true" />
+                <element signature="e#3904#3905#0" expanded="true" />
+                <element signature="e#3943#3944#0" expanded="true" />
+                <element signature="e#3979#3980#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_7_1_file.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_6_3_DialogFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-381">
+              <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,8 +140,10 @@
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_1_GroupLayout.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_1_ciracleLayoutFrame.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_2_Dialog.java" />
-        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java" />
+        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" />
+        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" />
+        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java" />
       </list>
     </option>
   </component>
@@ -210,38 +255,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.J_9_6_6">
+  <component name="RunManager" selected="Application.J_9_7_1_file">
     <configuration name="J_9_4_11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_4_11" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled" />
-      <envs />
-    </configuration>
-    <configuration name="J_9_5_8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_5_8" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled" />
-      <envs />
-    </configuration>
-    <configuration name="J_9_6_1_ciracleLayoutFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_6_1_ciracleLayoutFrame" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -284,6 +301,34 @@
     <configuration name="J_9_6_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_6_6" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="untitled" />
+      <envs />
+    </configuration>
+    <configuration name="J_9_6_7数据交换" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_6_7数据交换" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="untitled" />
+      <envs />
+    </configuration>
+    <configuration name="J_9_7_1_file" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="J_9_3_01.J_9_7_1_file" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -377,19 +422,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.J_9_5_8" />
-      <item index="1" class="java.lang.String" itemvalue="Application.J_9_6_1_ciracleLayoutFrame" />
-      <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_2_Dialog" />
-      <item index="3" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
-      <item index="4" class="java.lang.String" itemvalue="Application.J_9_6_6" />
+      <item index="0" class="java.lang.String" itemvalue="Application.J_9_6_2_Dialog" />
+      <item index="1" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
+      <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_6" />
+      <item index="3" class="java.lang.String" itemvalue="Application.J_9_6_7数据交换" />
+      <item index="4" class="java.lang.String" itemvalue="Application.J_9_7_1_file" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.J_9_6_6" />
-        <item index="1" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
-        <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_2_Dialog" />
-        <item index="3" class="java.lang.String" itemvalue="Application.J_9_6_1_ciracleLayoutFrame" />
-        <item index="4" class="java.lang.String" itemvalue="Application.J_9_5_8" />
+        <item index="0" class="java.lang.String" itemvalue="Application.J_9_7_1_file" />
+        <item index="1" class="java.lang.String" itemvalue="Application.J_9_6_7数据交换" />
+        <item index="2" class="java.lang.String" itemvalue="Application.J_9_6_6" />
+        <item index="3" class="java.lang.String" itemvalue="Application.J_9_6_3_DialogFrame" />
+        <item index="4" class="java.lang.String" itemvalue="Application.J_9_6_2_Dialog" />
       </list>
     </recent_temporary>
   </component>
@@ -469,20 +514,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_4_3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/javax/swing/text/AbstractDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38786">
-          <caret line="1763" column="26" lean-forward="false" selection-start-line="1763" selection-start-column="26" selection-end-line="1763" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/mouseComponent1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -782,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_2_Dialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1209">
@@ -818,11 +839,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-381">
+          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2894#2895#0" expanded="true" />
+            <element signature="e#2939#2940#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
+            <element signature="e#3872#3873#0" expanded="true" />
+            <element signature="e#3904#3905#0" expanded="true" />
+            <element signature="e#3943#3944#0" expanded="true" />
+            <element signature="e#3979#3980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
