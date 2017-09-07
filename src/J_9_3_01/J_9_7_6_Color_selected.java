@@ -1,9 +1,195 @@
 package J_9_3_01;
 
+
+import java.awt.*;
+        import javax.swing.*;
+        import java.awt.event.*;
+        import javax.swing.*;
+import java.awt.*;
+import java.beans.*;
+import java.lang.reflect.*;
+
 public class J_9_7_6_Color_selected
 {
+    public static void main(String[] args)
+    {
+        EventQueue.invokeLater(()->{
+            JFrame frame=new ColorChooserPanel();
+            frame.setVisible(true);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setTitle("这是一个颜色选择器测试...");
+
+
+            /**
+             * AWT
+             */
+            J_9_7_8 tracer=new J_9_7_8();
+            tracer.add(frame);
+
+        });
+    }
+}
+
+class ColorChooserPanel extends JFrame
+{
+    public ColorChooserPanel()
+    {
+        JButton modalButton=new JButton("Modal");
+        modalButton.addActionListener(new ModalListener());
+        add(modalButton,BorderLayout.NORTH);
+
+        JButton modelessButton=new JButton("Modeless");
+        modelessButton.addActionListener(new ModelessListener());
+        add(modelessButton,BorderLayout.CENTER);
+
+        JButton immediateButton=new JButton("Immediate");
+        immediateButton.addActionListener(new ImmediateListener());
+        add(immediateButton,BorderLayout.SOUTH);
+        pack();
+    }
+
+
+    private class ModalListener implements ActionListener
+    {
+        public void actionPerformed(ActionEvent event)
+        {
+            Color defaultColor=getBackground();
+            Color selected=JColorChooser.showDialog(ColorChooserPanel.this,"Set background..这是在这里",defaultColor);
+            if(selected!=null)
+                setBackground(selected);
+        }
+    }
+
+    private class ModelessListener implements ActionListener
+    {
+        private JDialog dialog;
+        private JColorChooser chooser;
+
+        public ModelessListener()
+        {
+            chooser=new JColorChooser();
+            dialog=JColorChooser.createDialog(ColorChooserPanel.this,
+                    "Background color",
+                    false,
+                    chooser,
+                    event->setBackground(chooser.getColor()),
+                    null);
+        }
+
+        public void actionPerformed(ActionEvent event)
+        {
+            chooser.setColor(getBackground());
+            dialog.setVisible(true);
+
+        }
+    }
+
+    private class ImmediateListener implements ActionListener
+    {
+        private JDialog dialog;
+        private JColorChooser chooser;
+
+        public ImmediateListener()
+        {
+            chooser=new JColorChooser();
+            chooser.getSelectionModel().addChangeListener(event->setBackground(chooser.getColor()));
+
+            dialog=new JDialog((Frame)null,false);
+            dialog.add(chooser);
+            dialog.pack();
+
+        }
+
+        public void actionPerformed(ActionEvent event)
+        {
+            chooser.setColor(getBackground());
+            dialog.setVisible(true);
+        }
+    }
 
 }
+
+
+/**
+ *
+ */
+
+ class J_9_7_8
+{
+    //如果想在GUI的应用中生成的每一个AWT事件的记录，可以在发出事件的每一个组件中安装一个监听器。利用反射，可以很容易的自动完成这个工作
+    private InvocationHandler handler;
+
+    public J_9_7_8()
+    {
+        handler=new InvocationHandler()
+        {
+            public Object invoke(Object proxy,Method method,Object[] args)
+            {
+                System.out.println(method+":"+args[0]);
+                return null;
+            }
+        };
+    }
+
+
+    /**
+     * 为所有有监听器的事件暗转一个事件跟踪器
+     */
+    public void add(Component c)
+    {
+        try
+        {
+            //得到所有可以监听的组件
+            BeanInfo info=Introspector.getBeanInfo(c.getClass());
+
+            EventSetDescriptor[] eventSets=info.getEventSetDescriptors();
+            for(EventSetDescriptor eventSet:eventSets)
+            {
+                addListener(c,eventSet);
+            }
+        }
+        catch(IntrospectionException e)
+        {
+        }
+
+        if(c instanceof Container)
+        {
+            for(Component comp:((Container)c).getComponents())
+            {
+                add(comp);
+            }
+        }
+    }
+
+    public void addListener(Component c,EventSetDescriptor eventSet)
+    {
+        Object proxy=Proxy.newProxyInstance(null,new Class[]{eventSet.getListenerType()},handler);
+
+        Method addListenerMethod=eventSet.getAddListenerMethod();
+        try
+        {
+            addListenerMethod.invoke(c,proxy);
+        }
+        catch(ReflectiveOperationException e)
+        {
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -52,4 +238,31 @@ cancelListener - 按下 "Cancel" 时调用的 ActionListener
 包含颜色选取器窗格的新对话框
 抛出：
 HeadlessException - 如果 GraphicsEnvironment.isHeadless() 返回 true。
+
+
+
+getSelectionModel
+
+public ColorSelectionModel getSelectionModel()
+返回处理颜色选择的数据模型。
+返回：
+ColorSelectionModel 对象
+
+
+
+
+setColor
+
+public void setColor(Color color)
+将颜色选取器的当前颜色设置为指定颜色。 ColorSelectionModel 将激发 ChangeEvent
+参数：
+color - 要在颜色选取器中设置的颜色
+
+
+getSelectionModel
+
+public ColorSelectionModel getSelectionModel()
+返回处理颜色选择的数据模型。
+返回：
+ColorSelectionModel 对象
  */
