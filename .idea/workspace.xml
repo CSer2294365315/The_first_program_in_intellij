@@ -7,17 +7,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38cd963-a316-4232-9d84-a3038d9ef9b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_3_01/ResouceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/Bank.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/J_9_8_3_interrupt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_3_MultiThread_Ball_可run代码/J_9_8_3_MultiThread_ball_class.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/resource/ResouceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/resource/ResourceTestFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/resource/about.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/resource/about.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resource/ResouceTest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/resource/about.gif" afterPath="$PROJECT_DIR$/src/J_9_3_01/about.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/resource/about.txt" afterPath="$PROJECT_DIR$/src/J_9_3_01/about.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/ButtonFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/CalculatorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_30_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_30_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_30_3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_31_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_31_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_31_3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_31_3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_31_4.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_31_5.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_8_31_6_map.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_10.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_11.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_3_Swing_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_5_swing.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_6_swing.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_7.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_8.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_1_9.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_2_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_2_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_2_3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_2_6.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_2_7.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_2_8.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_3_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_3_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_3_3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_10.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_11.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_12.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_13.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_6_User_And_Password.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_7.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_8_CheckBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_4_9_CheckBox_2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_5_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_5_2_ComboBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_5_3_again_comboBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_5_5_slider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_5_6_MenuBar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_5_7_Tool.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_5_8.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_1_ciracleLayoutFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_2_Dialog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_3_DialogFrame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_6.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_6_7数据交换.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_12.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_1_file.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_2_DataExchange_And_File.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_3_fileChooser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_6_Color_selected.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_7_8.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/J_9_8_1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/ResouceTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/about.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/about.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/image.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_3_01/mouseComponent1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/Bank.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/J_9_8_3_interrupt.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_8_3_MultiThread_Ball_可run代码/J_9_8_3_MultiThread_ball_class.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resource/Ball.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resource/BallComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resource/J_9_8_2_Single_Thread_Ball.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,7 +98,21 @@
     <favorites_list name="untitled" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="J_9_8_Multi_threads.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_9_CheckBox_2.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_10.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_11.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_12.java" />
@@ -116,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/J_9_8_3_MultiThread_Ball_可run代码/J_9_8_3_MultiThread_ball_class.java" />
         <option value="$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/Bank.java" />
         <option value="$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/J_9_8_3_interrupt.java" />
+        <option value="$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java" />
       </list>
     </option>
   </component>
@@ -456,6 +531,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2090784" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -467,7 +543,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.49722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14614774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14614774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889959" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -529,7 +605,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/mouseComponent1.java" />
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_8.java" />
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_1.java" />
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_2_ComboBox.java" />
@@ -604,6 +679,17 @@
         <state relative-caret-position="382">
           <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
