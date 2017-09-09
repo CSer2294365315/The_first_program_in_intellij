@@ -7,6 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38cd963-a316-4232-9d84-a3038d9ef9b3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_9_2/J_9_9_2_FutureTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" afterPath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,13 +72,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="304" column="0" lean-forward="true" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+            <state relative-caret-position="8030">
+              <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_9_2_FutureTask.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/J_9_9_2/J_9_9_2_FutureTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1659#1668#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/J_9_3_01/mouseComponent1.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/test.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_5_1.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_5_2_ComboBox.java" />
@@ -162,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_1.java" />
         <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2.java" />
         <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" />
+        <option value="$PROJECT_DIR$/src/J_9_9_2/J_9_9_2_FutureTask.java" />
       </list>
     </option>
   </component>
@@ -251,12 +266,6 @@
               <item name="java-intellij—GitHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-intellij—GitHub" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-intellij—GitHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-intellij—GitHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="J_9_8_6_Synchronized" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -583,7 +592,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_7_Tool.java" />
     <entry file="file://$PROJECT_DIR$/android-app-master/res/xml/preferences.xml" />
     <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_rack.xml" />
     <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/loading.xml" />
@@ -672,10 +680,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="304" column="0" lean-forward="true" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+        <state relative-caret-position="8030">
+          <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_9_2/J_9_9_2_FutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1659#1668#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -302,6 +302,66 @@ OutOfMemoryError - 如果无法分配所需大小的数组，例如文件大于 
 SecurityException - 在默认提供程序和安全管理器的情况下，将调用 checkRead方法来检查对该文件的读取访问。
 
 
+List<E> synchArrayList=Collections.synchronizedList(new ArrayList<E>());
+List<K,V> synchHashMap=Collections.synchronizedMap(new HashMap<K,V>);
+结果集合的方法使用锁加以保护，提供了线程安全访问
+应该确保没有任何线程通过原始的非同步方法访问数据结构。最便利的方法是确保不保存任何指向原始对象的引用，简单的构造一个集合并立即传递给包装器，向我们的例子中的那样。
 
+如果在另一个线程可能进行修改时要对集合进行迭代，仍然需要使用客户端锁定
+synchronized (synchHashMap)
+{
+    Iterator<K> iter=synchHashMap.keySet().iterator();
+    while(iter.hasNext())
+        ...
+}
+
+如果使用foreach循环，必须使用同样的代码，因为循环使用了迭代器。注意，如果在迭代的过程中，别的线程修改集合，迭代器会失效，抛出ConcurrentModificationException异常，同步仍然是需要的，因此并发的修改可以被可靠地检测出来。
+最好使用java.util.concurrent包中定义的集合，不使用同步包装器中的。特别是，假如他们访问的是不同的桶，由于ConcurrentHashMap已经精心的实现了，多线程可以访问它而且彼此不会阻塞。有一个例外是经常被修改的数组列表。在那种情况下，同步的ArrayList可以胜过CopyOnWriteArrayList。
+
+
+Callable与Future
+Runnable封装是一个异步运行的任务，可以把它想象成一个没有参数和返回值的异步方法。Callable与Runnable类似，但是有返回值。Callable接口是一个参数化的类型，只有一个方法call
+public interface Callable<V>
+{
+    v call() throws Exception;
+}
+类型参数是返回值的类型，例如：Callable<Integer>表示一个最终返回Integer对象的异步运算。
+Future保存异步计算的结果，可以启动一个计算，将Future对象交给某个线程，然后忘掉它。Future对象的所有者在结果计算好后可以获得它
+Future接口具有下面方法
+{
+    V get() throws ...;
+    V get(long timeout ,TimeUnit) throws
+    void cancel(boolean mayInterrupt);
+    boolean isCancelled();
+    boolean isDone();
+    }
+    第一个get方法的调用被阻塞，直到计算完成。如果在计算完成之前，第二个方法的调用超时，抛出一个TimeoutException异常
+    FutureTask包装器是一种非常便利的机制，可以将Callable转换成Future和Runnable。他们同时实现两者的接口
+    {
+        Callable<Integer> myCompution;
+        FutureTask<Integer> task=new FutureTask<Integer>(myCompotation)
+        Thread t=new Thread(task)
+        t.start();
+        ...
+        Integer result =task.get();
+     }
+     我们需要仅仅计算匹配的文件数目的程序，所以，我们有一个需要长时间运行的任务，它产生一个数值，一个Callable<Integer>的例子
+     class MatchCounter implements Callable<Integer>
+     {
+        public MatchCounter(File directory,String keyword)
+        {
+            ...
+        }
+
+        public Integer call()
+        {
+            //return the numbet of matching files
+        }
+     }
+
+      然后和我们利用MatchCounter创建一个FutureTask对象。并用来启动一个线程。
+      FutureTask<Integet> task =new FutureTask<Integer>();
+      Thread t=new Thread(task);
+      t.start();
 
  */
