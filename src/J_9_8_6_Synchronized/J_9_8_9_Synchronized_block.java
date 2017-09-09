@@ -103,12 +103,37 @@ final Map<String,Double> accounts =new HashMap<>();
 原子性
 
 假设对共享变量除了赋值之外并不完成其他操作，那么可以将这些共享变量声明为volatile。
-java.util.concurrent.atomic包中有很多使用了很高效的机器指令（而不是使用锁）。来保证其他操作的原子性。例如，AtomicIntger类提供了方法incrementAndGet和decrementAndGet，他们分别以原子方式讲一个整数自增或者自减。例如，可以安全的生成一个数值序列，如图所示：
+java.util.concurrent.atomic包中有很多使用了很高效的机器指令（而不是使用锁）。来保证其他操作的原子性。例如，AtomicInteger类提供了方法incrementAndGet和decrementAndGet，他们分别以原子方式讲一个整数自增或者自减。例如，可以安全的生成一个数值序列，如图所示：
 public static AtomicLong nextNumber =new AtomicLong();
 long id=nextNumber.incrementAndGet();
 incrementAndGet方法以原子方式将AtomicLong自增或者自减。并返回自增后的值。也就是说，获得值，增加1，并且设置然后生成新值的操作不会中断。可以保证即使是多个线程并发的访问同一个实例，也会计算并且返回正确的值。
 有很多方法可以以原子的方式设置和增减值，不过，如果希望完成更复杂的更新，就必须使用compareAndSet方法。例如，假设希望跟踪不同线程观察的最大值。下面的代码是不可行的
-public 
+public static AtomicLong largest =new AtomicLong();
+largest.set(Math.max(largest.get(),observed));
+这个更新不是原子的，应该在一个循环中计算新值和使用compareAndSet()
+do{
+oldValue=largest.get();
+newValur=Math.max(oldValue,observed);
+}while(!largest.compareAndSet(oldValue,newValue))
+
+如果另外一个线程也在更新largest，就有可能阻止这个线程更新，这样一来，compareAndSet就会返回false，而不会设置新值。在这种情况系，循环会再次尝试，读取新更新后的值，并修改。最后他会成功的用新值替换原来的值。这听起来很麻烦，但是compareAndSet方法会映射到一个处理器操作，比使用所的速度更快
+在javaSE8中，不再需要编写这样的循环样板代码。实际上，可以提供一个lambda表达式更新变量，他会为你完成更新。对于这个例子，我们可以调用：
+largest.updataAndGet(x->Math.max(x,observed));
+或者
+largest.accumulateAndGet(observed,Math::max);
+accumulateAndGet方法利用一个二元操作符来合并原子值和所提供的参数
+还有getAndUpdata和getAndAccumulate方法来返回原值
+如果有大量线程要访问相同的原子值，性能会大幅度下降，因为乐观更新需要太多次重试。
+JavaSE8中，提供了LongAdder和LongAccumulator来解决这个问题，LongAdder包括多个变量，其总和为当前值。可以有多个线程更新不同的家属，县城个数增加是，会自动提供新的加数，通常情况下，只有当所有工作都完成后才需要总和的值，对于这种情况，这种方法会很高效。性能会有很高的提升
+如果认为可能存在大量竞争，只需要使用LongAdder而不是AtomicLong。方法名稍有区别，调用increment让计数器自增。或者调用add来增加一个量，或者调用sum来获取总和
+final LongAdder adder=new LongAdder();
+for(...)
+    pool.submit(()->{
+    ...
+    adder.increment();
+
+当然，inrement方法不会返回原值，这样做会消除讲求和分解到多个加数所带来的性能提升。
+LongAccumulator将这种思想推广到任意的累加操作，在构造其中，可以提供这个操作以及他的另元素，要加入新的值，可以调用accumulate。
 
 
 

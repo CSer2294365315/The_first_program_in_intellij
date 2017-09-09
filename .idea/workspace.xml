@@ -7,16 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38cd963-a316-4232-9d84-a3038d9ef9b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_6_Synchronized_.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_9_Synchronized_block.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_8_3_Interrupt_thread/Bank.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_8_3_Interrupt_thread/J_9_8_3_interrupt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_8_3_MultiThread_Ball_可run代码/Ball.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_8_3_MultiThread_Ball_可run代码/BallComponent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_8_3_MultiThread_Ball_可run代码/BounceFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled/J_9_8_3_MultiThread_Ball_可run代码/J_9_8_3_MultiThread_ball_class.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/网址收藏夹/网址_有时间可以发到CSDN.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_9_Synchronized_block.java" afterPath="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_9_Synchronized_block.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +34,7 @@
       <file leaf-file-name="J_9_8_6_Synchronized_.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_6_Synchronized_.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="1320">
               <caret line="60" column="52" lean-forward="false" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
               <folding>
                 <element signature="e#1784#1785#0" expanded="true" />
@@ -49,12 +44,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="J_9_8_9_Synchronized_block.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="J_9_8_9_Synchronized_block.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_9_Synchronized_block.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+            <state relative-caret-position="2970">
+              <caret line="135" column="75" lean-forward="false" selection-start-line="135" selection-start-column="75" selection-end-line="135" selection-end-column="75" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="网址_有时间可以发到CSDN.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/网址收藏夹/网址_有时间可以发到CSDN.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_9_1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,6 +91,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -87,11 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_12.java" />
-        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_2.java" />
-        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_7.java" />
-        <option value="$PROJECT_DIR$/src/J_9_4_13.java" />
-        <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_4_13.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/mouseComponent1.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/test.java" />
         <option value="$PROJECT_DIR$/src/J_9_3_01/J_9_5_1.java" />
@@ -138,6 +161,11 @@
         <option value="$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java" />
         <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_6_Synchronized_.java" />
         <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_9_Synchronized_block.java" />
+        <option value="$PROJECT_DIR$/out/收藏夹.html" />
+        <option value="$PROJECT_DIR$/src/网址收藏夹/网址_有时间可以发到CSDN.java" />
+        <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_1.java" />
+        <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2.java" />
+        <option value="$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java" />
       </list>
     </option>
   </component>
@@ -213,7 +241,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,20 +262,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="J_9_8_6_Synchronized" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="java-intellij—GitHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-intellij—GitHub" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="J_9_8_6_Synchronized" type="462c0819:PsiDirectoryNode" />
-              <item name="J_9_8_6_Synchronized_.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,6 +279,7 @@
     <property name="SearchEverywhereHistoryKey" value="buttonframe&#9;PSI&#9;JAVA://J_9_3_01.RadioButtonFrame&#10;dialogframe&#9;PSI&#9;JAVA://J_9_3_01.J_9_6_3_DialogFrame&#10;abel&#9;PSI&#9;JAVA://javax.swing.text.AbstractDocument.AbstractElement&#10;mouseRel&#9;PSI&#9;JAVA://java.awt.Robot#mouseRelease" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -277,21 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.J_9_8_6_Synchronized_">
-    <configuration name="J_9_7_11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="J_9_02_package.J_9_7_11" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="Application.J_9_9_2_在给定的目录中搜索文件中的指定字符串">
     <configuration name="J_9_8_2_Single_Thread_Ball" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="resource.J_9_8_2_Single_Thread_Ball" />
@@ -351,6 +359,20 @@
     <configuration name="J_9_8_Multi_threads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="J_9_8_多线程.J_9_8_Multi_threads" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="untitled" />
+      <envs />
+    </configuration>
+    <configuration name="J_9_9_2_在给定的目录中搜索文件中的指定字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="J_9_8_6_Synchronized.J_9_9_2_在给定的目录中搜索文件中的指定字符串" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -447,13 +469,13 @@
       <item index="0" class="java.lang.String" itemvalue="Application.J_9_8_2_Single_Thread_Ball" />
       <item index="1" class="java.lang.String" itemvalue="Application.J_9_8_3_MultiThread_ball_class" />
       <item index="2" class="java.lang.String" itemvalue="Application.J_9_8_3_interrupt" />
-      <item index="3" class="java.lang.String" itemvalue="Application.J_9_8_Multi_threads" />
-      <item index="4" class="java.lang.String" itemvalue="Application.J_9_8_6_Synchronized_" />
+      <item index="3" class="java.lang.String" itemvalue="Application.J_9_8_6_Synchronized_" />
+      <item index="4" class="java.lang.String" itemvalue="Application.J_9_9_2_在给定的目录中搜索文件中的指定字符串" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.J_9_8_6_Synchronized_" />
-        <item index="1" class="java.lang.String" itemvalue="Application.J_9_8_Multi_threads" />
+        <item index="0" class="java.lang.String" itemvalue="Application.J_9_9_2_在给定的目录中搜索文件中的指定字符串" />
+        <item index="1" class="java.lang.String" itemvalue="Application.J_9_8_6_Synchronized_" />
         <item index="2" class="java.lang.String" itemvalue="Application.J_9_8_3_interrupt" />
         <item index="3" class="java.lang.String" itemvalue="Application.J_9_8_3_MultiThread_ball_class" />
         <item index="4" class="java.lang.String" itemvalue="Application.J_9_8_2_Single_Thread_Ball" />
@@ -491,7 +513,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2090784" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -503,7 +524,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.49722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14614774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14614774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889959" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -565,10 +586,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_2_ComboBox.java" />
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_3_again_comboBox.java" />
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_5_slider.java" />
-    <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_6_MenuBar.java" />
     <entry file="file://$PROJECT_DIR$/src/J_9_3_01/J_9_5_7_Tool.java" />
     <entry file="file://$PROJECT_DIR$/android-app-master/res/xml/preferences.xml" />
     <entry file="file://$PROJECT_DIR$/android-app-master/res/anim/gd_rack.xml" />
@@ -616,41 +633,13 @@
     <entry file="file://$PROJECT_DIR$/src/resource/Ball.java" />
     <entry file="file://$PROJECT_DIR$/src/resource/BallComponent.java" />
     <entry file="file://$PROJECT_DIR$/src/resource/J_9_8_2_Single_Thread_Ball.java" />
-    <entry file="file://$PROJECT_DIR$/src/J_9_8_3_MultiThread_Ball_可run代码/J_9_8_3_MultiThread_ball_class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/J_9_8_3_interrupt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-839">
-          <caret line="74" column="56" lean-forward="true" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_8_3_MultiThread_Ball_可run代码/J_9_8_3_MultiThread_ball_class.java" />
+    <entry file="file://$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/Bank.java" />
+    <entry file="file://$PROJECT_DIR$/src/J_9_8_3_Interrupt_thread/J_9_8_3_interrupt.java" />
+    <entry file="file://$PROJECT_DIR$/src/J_9_8_多线程/J_9_8_Multi_threads.java" />
     <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_6_Synchronized_.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="1320">
           <caret line="60" column="52" lean-forward="false" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
           <folding>
             <element signature="e#1784#1785#0" expanded="true" />
@@ -659,11 +648,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/收藏夹.html" />
     <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_8_9_Synchronized_block.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+        <state relative-caret-position="2970">
+          <caret line="135" column="75" lean-forward="false" selection-start-line="135" selection-start-column="75" selection-end-line="135" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/网址收藏夹/网址_有时间可以发到CSDN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/J_9_8_6_Synchronized/J_9_9_2_在给定的目录中搜索文件中的指定字符串.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
