@@ -140,8 +140,168 @@ public File[] listFiles()
 SecurityException - 如果存在安全管理器，且其 SecurityManager.checkRead(java.lang.String) 方法拒绝对目录进行读访问
 
 
+线程安全的集合
+如果多线程要兵法的修改一个数据结构，例如散列表，那么很容易的破坏这个数据结构，例如：一个线程可能要开始向表中插入一个新元素，假定在调整散列表各个桶之间的连接关系的过程中，被剥夺了控制权，如果另外一个线程也开始便利同一个链表，可能使用无效的链接并造成混乱，可能抛出异常并陷入无限循环
+
+可以通过提供锁来保护共享数据结构，但是选择线程安全的实现作为替代可能会更容易一些。当然，前一节讨论的阻塞队列就是线程安全的集合。下面将讨论java类库提供的另外一些线程安全的集合
+
+高效的映射、集、和队列
+
+java.util.concurrent包提供了包括映射、有序集、和队列的高效实现：ConcurrentHashMap、ConcurrentSkipListMap、ConcurrentSkipListSet和ConcurrentLinkedQueue
+这些集合使用复杂的算法，通过允许并发的访问数据结构的不同部分来时竞争极小化
+与大多集合不同，size方法不必在常量时间内操作。确定这样的集合当前的大小通常需要遍历
+集合返回弱一致性（weakly consistent)的迭代器，这意味着迭代器不一定能反映出他们被构造之后的所有修改，但是，他们不会将同一个值返回两次，也不会抛出ConcurrentModificationException
+与之形成对照的是，集合如果在迭代器构造之后发生改变，java.util包中的迭代器将抛出一个ConcurrentModificationException异常。
+并发的散列映射表，可以高效的支持大量的读者和一定数量的写者。在默认情况下，假定可以有多大16个写者线程同时执行。可以有更多的写着线程，但是 ，如果同一时间多于16个，其他线程将暂时被阻塞。可以指定更大数目的构造器，然而，恐怕没有这种必要。
+散列映射将有相同散列码的所有条目放在同一个桶中，有些应用使用的散列函数不当，以至于所有的条目最后都放在很少的桶中，这会严重的降低性能。即使是一般意义上的还算合理的算列函数，如String类的散列函数，也可能存在这种问题，例如，攻击者可能会制造大量有相同散列值的字符串，让程序的速度变慢，在Java SE 8中，并发散列映射将桶组织为树，而不是列表。键类型实现了Comparable，从而可以保证性能为O(log n）
+java.util.concurrent.ConcurrentLinkedQueue<E>
+ConcurrentLinkedQueue<E>()
+构造一个可以被多线程安全访问的无边界非阻塞的队列
+java.util.concurrentLinkedQueue<E>()
+ConcurrentSkipListSet<E>()
+ConcurrentSkipListSet<E>(Comparator<? super E> comp)
+构造一个可以被多线程安全访问的有续集，第一个构造器要求元素实现Comparable接口
 
 
  */
 
+/*
 
+replace
+public boolean replace(K key,
+                       V oldValue,
+                       V newValue)
+仅当当前映射到给定值时才替换密钥的条目。 这相当于
+   if (map.containsKey(key) && Objects.equals(map.get(key), oldValue)) { map.put(key, newValue); return true; } else return false;
+除了动作以原子方式执行。
+Specified by:
+replace在界面 ConcurrentMap<K,V>
+Specified by:
+replace在界面 Map<K,V>
+参数
+key - 与指定值相关联的键
+oldValue - 预期与指定键相关联的值
+newValue - 要与指定键相关联的值
+结果
+true如果该值被替换
+
+
+putIfAbsent
+public V putIfAbsent(K key,
+                     V value)
+如果指定的键尚未与值相关联，请将其与给定值相关联。 这相当于
+   if (!map.containsKey(key)) return map.put(key, value); else return map.get(key);
+除了动作以原子方式执行。
+Specified by:
+putIfAbsent在接口 ConcurrentMap<K,V>
+Specified by:
+putIfAbsent在界面 Map<K,V>
+参数
+key - 要与其关联的指定值的键
+value - 与指定键相关联的值
+结果
+与指定键相关联的上一个值，如果没有键的映射， null
+异常
+NullPointerException - 如果指定的键或值为空
+
+
+get
+public V get(Object key)
+返回到指定键所映射的值，或null如果此映射包含该键的映射。
+更正式地，如果该映射包含从键k到值v ，使得key.equals(k) ，则该方法返回v ; 否则返回null 。 （最多可以有一个这样的映射。）
+
+Specified by:
+get在界面 Map<K,V>
+重写：
+get在 AbstractMap<K,V>
+参数
+key - 要返回其关联值的键
+结果
+指定键映射到的值，如果此映射不包含键的映射， null
+异常
+NullPointerException - 如果指定的键为空
+
+
+
+
+compute
+public V compute(K key,
+                 BiFunction<? super K,? super V,? extends V> remappingFunction)
+尝试计算用于指定键和其当前映射的值的映射（或null如果没有当前映射）。 整个方法调用是以原子方式执行的。 在计算过程中可能会阻止其他线程对此映射进行的一些尝试更新操作，因此计算应该简单而简单，而且不得尝试更新此Map的任何其他映射。
+Specified by:
+compute中的 ConcurrentMap<K,V>
+Specified by:
+compute在接口 Map<K,V>
+参数
+key - 指定值与之关联的键
+remappingFunction - 计算值的函数
+结果
+与指定键相关的新值，如果没有则为null
+异常
+NullPointerException - 如果指定的键或remappingFunction为空
+IllegalStateException - 如果计算可检测地尝试递归更新该映射，否则将永远不会完成
+RuntimeException - 或者如果remappingFunction这样做，则出错，在这种情况下映射不变
+
+
+
+merge
+public V merge(K key,
+               V value,
+               BiFunction<? super V,? super V,? extends V> remappingFunction)
+如果指定的键尚未与（非空）值相关联，则将其与给定值相关联。 否则，使用给定的重映射函数的结果替换该值，或者删除null 。 整个方法调用是以原子方式执行的。 在计算过程中可能会阻止其他线程对此映射进行的一些尝试更新操作，因此计算应该简单而简单，而且不得尝试更新此Map的任何其他映射。
+Specified by:
+merge在界面 ConcurrentMap<K,V>
+Specified by:
+merge中的 Map<K,V>
+参数
+key - 与其相关联的指定值的键
+value - 缺席时使用的值
+remappingFunction - 重新计算值（如果存在）的功能
+结果
+与指定键相关的新值，如果没有则为null
+异常
+NullPointerException - 如果指定的键或remappingFunction为空
+RuntimeException - 或者如果重映射功能如此，则出错，在这种情况下映射不变
+
+
+
+reduceValues
+public V reduceValues(long parallelismThreshold,
+                      BiFunction<? super V,? super V,? extends V> reducer)
+返回使用给定的reducer累加所有值的结果，以组合值，如果没有则返回null。
+参数
+parallelismThreshold - 并行执行此操作所需的元素数量（估计）
+reducer - 一种交换联想组合函数
+结果
+积累所有价值的结果
+
+
+newKeySet
+public static <K> ConcurrentHashMap.KeySetView<K,Boolean> newKeySet()
+创建一个新的Set，由一个ConcurrentHashMap支持，从给定的类型到Boolean.TRUE 。
+参数类型
+K - 返回集合的元素类型
+结果
+新集
+
+
+
+readAllBytes
+public static byte[] readAllBytes(Path path)
+                           throws IOException
+读取文件中的所有字节。 该方法确保在读取所有字节或抛出I / O错误或其他运行时异常时关闭文件。
+请注意，此方法适用于将所有字节读入字节数组的简单情况。 它不是用于阅读大文件。
+
+参数
+path - 文件的路径
+结果
+一个包含从文件读取的字节的字节数组
+异常
+IOException - 如果从流中读取I / O错误
+OutOfMemoryError - 如果无法分配所需大小的数组，例如文件大于 2GB
+SecurityException - 在默认提供程序和安全管理器的情况下，将调用 checkRead方法来检查对该文件的读取访问。
+
+
+
+
+ */
